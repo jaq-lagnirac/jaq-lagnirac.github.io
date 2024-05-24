@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+  --background-color: #f6f6f6;
+  --foreground-color: #1a7939;
+  --primary-text-color: #0a0a0a;
+  --secondary-text-color: #ffffff;
+  --toggle-bg: #f0eb9d;
+  --toggle-fg: #ffd000;
+
+  --nav-color: #f40a0a;
+  /* if changing --nav-color, update fill in ./components/Hamburger_icon.svg */
+  --landing-color: #1a7939;
+}
+
+[data-theme="dark"] {
+  --background-color: #0a0a0a;
+  --foreground-color: #189c44;
+  --primary-text-color: #f6f6f6;
+  --secondary-text-color: #ffffff;
+  --toggle-bg: #283452;
+  --toggle-fg: #00a6ff;
+}
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(219, 12, 12, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #f40a0a;
+}
+
+button:hover {
+  border-color: #f40a0a57;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
