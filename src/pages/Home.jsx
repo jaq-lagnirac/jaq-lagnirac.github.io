@@ -35,10 +35,14 @@ export function Home() {
           />
           <br/>
           <br/>
-          <p className="landing-blurb">Placeholder text</p>
+          <p className="landing-blurb">
+            A multifaceted individual of eclectic tastes
+            who possesses a great love of learning.
+          </p>
         </div>
       </div>
       <div style={{height: "10vh"}}/> {/* gives room for animation */}
+      <div style={{height: " 100vh"}}/>
     </>
   )
 }

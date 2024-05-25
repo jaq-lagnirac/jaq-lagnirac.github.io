@@ -61,6 +61,8 @@
   font-weight: 400;
   font-style: normal;
   font-size: 4em;
+  width: max-content;
+  transition: font-size 250ms ease-in-out;
 }
 
 @keyframes type-translate {
@@ -80,7 +82,10 @@
 } */
 
 @media screen and (max-width: 900px) {
+  .home-text-grouping {
+    left: 15vw;
+  }
   .type-animation {
-    width: 40vw;
+    font-size: 5vh;
   }
 }

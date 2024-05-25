@@ -6,25 +6,30 @@
 }
 
 :root {
-  --background-color: #f6f6f6;
+  --background-color: #fffdf3;
   --foreground-color: #1a7939;
-  --primary-text-color: #0a0a0a;
+  --primary-text-color: #181d27;
   --secondary-text-color: #ffffff;
-  --toggle-bg: #f0eb9d;
+  --toggle-bg: #4919f6;
   --toggle-fg: #ffd000;
 
-  --nav-color: #f40a0a;
-  /* if changing --nav-color, update fill in ./components/Hamburger_icon.svg */
+
+  --nav-color: #8d6bc7;
+  /*
+    if changing --nav-color, update fill in ./components/Hamburger_icon.svg
+    f40a0a
+    2d283e
+  */
   --landing-color: #1a7939;
 }
 
 [data-theme="dark"] {
-  --background-color: #0a0a0a;
+  --background-color: #181d27;
   --foreground-color: #189c44;
-  --primary-text-color: #f6f6f6;
+  --primary-text-color: #fffdf3;
   --secondary-text-color: #ffffff;
-  --toggle-bg: #283452;
-  --toggle-fg: #00a6ff;
+  --toggle-bg: #2d283e;
+  --toggle-fg: #c4bfce;
 }
 
 /* :root {
