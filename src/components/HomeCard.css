@@ -1,0 +1,54 @@
+.home-card-box {
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: 40vh;
+  width: 50vw;
+  min-height: fit-content;
+  min-width: fit-content;
+  border: 5px solid var(--foreground-color);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 1.5em 0 var(--primary-text-color);
+  transition: scale 100ms ease-in-out;
+}
+
+.home-card-box:hover {
+  scale: 1.05;
+}
+
+.slide-in-left {
+  animation: slide-in-left cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 75vh;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-20vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slide-in-right cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 75vh;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(20vh);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
