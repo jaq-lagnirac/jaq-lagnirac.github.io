@@ -24,7 +24,7 @@ export function Navbar() {
   // redux state management
   let dispatch = useDispatch()
 
-  // sets toggle on render
+  // sets toggle on render (extra level of assurance)
   useEffect(() => {
     setIsDark(preference)
   }, [])
@@ -53,6 +53,9 @@ export function Navbar() {
           <HoverButton className={className}>
             <Link to="/page1">Page 1</Link>
           </HoverButton>
+          <HoverButton className={className}>
+            <Link to="/contact">Contact</Link>
+          </HoverButton>
         </FadeIn>
       )
     }
@@ -69,7 +72,7 @@ export function Navbar() {
             </HoverButton>
             <NavButtonList className="nav-button nav-tabs" show={showNav}/>
           </td>
-          <td className="dark-mode-toggle">
+          <td className="dark-mode-toggle nav-button">
             <Toggle
                 isChecked={isDark}
                 handleChange={() => dispatch(toggleMode(), setIsDark(!isDark))}
