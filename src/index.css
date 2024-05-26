@@ -7,7 +7,7 @@
 
 :root {
   --background-color: #fffdf3;
-  --foreground-color: #1a7939;
+  --foreground-color: #6c43b1;
   --primary-text-color: #181d27;
   --secondary-text-color: #ffffff;
   --toggle-bg: #4919f6;
@@ -19,13 +19,16 @@
     if changing --nav-color, update fill in ./components/Hamburger_icon.svg
     f40a0a
     2d283e
+
+    1a7939
   */
-  --landing-color: #1a7939;
+  --landing-color: #6c43b1;
 }
 
 [data-theme="dark"] {
   --background-color: #181d27;
-  --foreground-color: #189c44;
+  /* if changing, change .app bg-fade in pages/Home.css */
+  --foreground-color: #8d6bc7;
   --primary-text-color: #fffdf3;
   --secondary-text-color: #ffffff;
   --toggle-bg: #2d283e;

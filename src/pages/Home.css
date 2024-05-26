@@ -14,9 +14,10 @@
   height: 100vh;
   width: 100%;
   z-index: 0;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-.landing {
+#landing {
   position: relative;
   height: 100vh;
   z-index: 1;
@@ -37,7 +38,23 @@
   }
 }
 
-.home-text-grouping {
+.app {
+  animation: bg-fade linear;
+  animation-timeline: view();
+  animation-range-start: contain;
+  animation-range-end: 150vh;
+}
+
+@keyframes bg-fade {
+  from {
+    background-color: #181d27;
+  }
+  to {
+    background-color: var(--background-color);
+  }
+}
+
+#home-text-grouping {
   position: absolute;
   left: 10vw;
   top: 40vh;
@@ -49,7 +66,7 @@
   animation-range-end: cover;
 }
 
-.landing-blurb {
+#landing-blurb {
   padding: 2px;
   width: fit-content;
   background-color: var(--landing-color);
@@ -72,6 +89,11 @@
   to {
     transform: translateX(-300px);
   }
+}
+
+#home-body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* @media screen and (max-width: 700px) {
