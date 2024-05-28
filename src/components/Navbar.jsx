@@ -2,7 +2,6 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import FadeIn from "react-fade-in/lib/FadeIn"
 import "./Navbar.css"
-import HamburgerIcon from "../assets/Hamburger_icon.svg"
 import { BiMenu } from "react-icons/bi";
 
 
