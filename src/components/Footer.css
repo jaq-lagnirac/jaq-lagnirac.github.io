@@ -1,0 +1,10 @@
+#footer-div {
+  display: flex;
+  flex-direction: column;
+  height: var(--footer-height);
+  background-color: #2d283e;
+  color: #fffdf3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

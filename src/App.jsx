@@ -3,7 +3,6 @@ import { Layout } from './Layout'
 import { useSelector } from 'react-redux'
 import './App.css'
 import { Home } from './pages/Home'
-import { Page1 } from './pages/Page1'
 import { Contact } from './pages/Contact'
 
 function App() {
@@ -15,8 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route element={<Layout/>}>
-            <Route path="/" element={<Home/>}/>\
-            <Route path="/page1" element={<Page1/>}/>
+            <Route path="/" element={<Home/>}/>
             <Route path="/contact" element={<Contact/>}/>
           </Route>
         </Routes>

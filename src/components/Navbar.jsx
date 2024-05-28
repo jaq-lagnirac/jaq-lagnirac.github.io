@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import FadeIn from "react-fade-in/lib/FadeIn"
 import "./Navbar.css"
 import HamburgerIcon from "../assets/Hamburger_icon.svg"
+import { BiMenu } from "react-icons/bi";
+
 
 import { useDispatch } from "react-redux"
 import { Toggle } from "./Toggle"
@@ -36,6 +38,7 @@ export function Navbar() {
         className={className}
         onMouseEnter={() => setShowNav(true)}
         onMouseLeave={() => setShowNav(false)}
+        onClick={() => setShowNav(!showNav)} // for accessibility
       >
         {children}
       </b>
@@ -51,9 +54,6 @@ export function Navbar() {
             <Link to="/">Home</Link>
           </HoverButton>
           <HoverButton className={className}>
-            <Link to="/page1">Page 1</Link>
-          </HoverButton>
-          <HoverButton className={className}>
             <Link to="/contact">Contact</Link>
           </HoverButton>
         </FadeIn>
@@ -62,24 +62,31 @@ export function Navbar() {
   }
 
   return (
-    <table className="nav-container">
-      <tbody>
-        <tr>
-          <td className="navbar">
-            <HoverButton className="nav-button hamburger">
-              <img src={HamburgerIcon} alt="Menu"/>
-              {/* <object data={HamburgerIcon}></object> */}
-            </HoverButton>
-            <NavButtonList className="nav-button nav-tabs" show={showNav}/>
-          </td>
-          <td className="dark-mode-toggle nav-button">
-            <Toggle
-                isChecked={isDark}
-                handleChange={() => dispatch(toggleMode(), setIsDark(!isDark))}
-              />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <>
+      {/* <div id="nav-bg"/> */}
+      <table className="nav-container">
+        <tbody>
+          <tr>
+            <td className="navbar">
+              <HoverButton className="nav-button">
+                <BiMenu 
+                  id="hamburger"
+                  size="1.75em"
+                />
+                {/* <img src={HamburgerIcon} alt="Menu"/> */}
+                {/* <object data={HamburgerIcon}></object> */}
+              </HoverButton>
+              <NavButtonList className="nav-button nav-tabs" show={showNav}/>
+            </td>
+            <td className="dark-mode-toggle nav-button">
+              <Toggle
+                  isChecked={isDark}
+                  handleChange={() => {setIsDark(!isDark), dispatch(toggleMode())}}
+                />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   )
 }

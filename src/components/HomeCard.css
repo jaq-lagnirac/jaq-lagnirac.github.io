@@ -4,13 +4,13 @@
   margin-bottom: 10vh;
   height: 40vh;
   width: 50vw;
-  min-height: fit-content;
-  min-width: fit-content;
+  /* min-height: fit-content;
+  min-width: fit-content; */
   border: 5px solid var(--foreground-color);
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 0 1.5em 0 var(--primary-text-color);
-  transition: scale 100ms ease-in-out;
+  transition: scale 100ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 .home-card-box:hover {

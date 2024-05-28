@@ -26,16 +26,19 @@ export function HomeCard({ title, img, side, children }) {
             src={ img }
             style={{
               height:"40vh", 
-              flexBasis: "25%",
+              flexBasis: "10%",
               objectFit: "cover"
             }}
           />
           <div style={{
-            marginBottom: "25px",
-            textAlign: side
+            marginLeft: "25px",
+            marginRight: "25px",
+            marginBottom: "30px",
+            textAlign: side,
+            overflowWrap: "break-word"
             }}>
             <h1>{ title }</h1>
-            <p>{ children }</p>
+            <p><br/>{ children }</p>
           </div>
         </div>
       </div>
