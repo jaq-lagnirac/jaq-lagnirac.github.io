@@ -9,3 +9,12 @@
   transition: background-color 250ms ease-in-out;
   z-index: -99999999;
 }
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--nav-color);
+}

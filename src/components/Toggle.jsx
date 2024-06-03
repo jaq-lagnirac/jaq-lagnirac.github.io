@@ -1,3 +1,4 @@
+import { DarkModeSwitch } from "react-toggle-dark-mode"
 import "./Toggle.css"
 
 export function Toggle({ handleChange, isChecked }) {

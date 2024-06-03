@@ -1,9 +1,9 @@
-a {
+.nav-tabs a, .nav-tabs p {
   color: var(--primary-text-color);
   background-color: var(--background-color);
   text-decoration: none;
 }
-a:hover {
+.nav-button p:hover {
   color: var(--nav-color);
 }
 
@@ -26,11 +26,12 @@ a:hover {
 
 #hamburger {
   fill: var(--nav-color);
+  text-align: right;
 }
   
-/* .nav-tabs {
-
-} */
+.nav-tabs {
+  font-size: 1.75em;
+}
 
 .nav-container {
   position: fixed;
@@ -50,7 +51,15 @@ a:hover {
 .dark-mode-toggle {
   position: sticky;
   float: right;
-  padding-top: 0vh;
+  padding-top: 0.25em;
+}
+
+.toggle-switch {
+  margin-right: 5em;
+}
+.sun-moon {
+  padding-top: 1.4em;
+  margin-right: 0.35em;
 }
 
 .navbar {
@@ -58,13 +67,15 @@ a:hover {
   padding-top: 2vh;
   padding-right: 2%;
   height: 5%;
-  font-size: 0.9em;
+  /* width: 10vh; */
+  width: 7.1%;
+  /* font-size: 0.9em; */
+  font-size: 1.2em;
   text-align: right;
   float: right;
-  width: 10vh;
 }
 
-@media screen and (min-width: 900px) {
+/* @media screen and (min-width: 900px) {
   .navbar {
     font-size: 1.6vw;
     width: 7%;
@@ -76,4 +87,4 @@ a:hover {
     font-size: 1.2em;
     width: 7.1%;
   }
-}
+} */

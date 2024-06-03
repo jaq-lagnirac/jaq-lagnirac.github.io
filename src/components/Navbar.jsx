@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import FadeIn from "react-fade-in/lib/FadeIn"
 import "./Navbar.css"
 import { BiMenu } from "react-icons/bi";
-
+import { DarkModeSwitch } from "react-toggle-dark-mode"
 
 import { useDispatch } from "react-redux"
 import { Toggle } from "./Toggle"
@@ -48,16 +48,26 @@ export function Navbar() {
   function NavButtonList({ className, show }) {
     if (show) {
       return (
+        <div style={{
+          display: "flex",
+          justifyContent: "right",
+        }}>
         <FadeIn>
           <HoverButton className={className}>
-            <Link to="/">Home</Link>
+            <Link to="/"><p>Home</p></Link>
           </HoverButton>
           <HoverButton className={className}>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact"><p>Contact</p></Link>
           </HoverButton>
         </FadeIn>
+        </div>
       )
     }
+  }
+
+  const handleChange = () => {
+    setIsDark(!isDark);
+    dispatch(toggleMode());
   }
 
   return (
@@ -68,20 +78,28 @@ export function Navbar() {
           <tr>
             <td className="navbar">
               <HoverButton className="nav-button">
-                <BiMenu 
-                  id="hamburger"
-                  size="1.75em"
-                />
+                <div>
+                  <BiMenu 
+                    id="hamburger"
+                    size="2em"
+                  />
+                </div>
                 {/* <img src={HamburgerIcon} alt="Menu"/> */}
                 {/* <object data={HamburgerIcon}></object> */}
               </HoverButton>
               <NavButtonList className="nav-button nav-tabs" show={showNav}/>
             </td>
-            <td className="dark-mode-toggle nav-button">
+            <td className="dark-mode-toggle toggle-switch nav-button">
               <Toggle
                   isChecked={isDark}
-                  handleChange={() => {setIsDark(!isDark), dispatch(toggleMode())}}
-                />
+                  handleChange={handleChange}
+              />
+            </td>
+            <td className="dark-mode-toggle sun-moon nav-button">
+              <DarkModeSwitch
+                checked={isDark}
+                onChange={handleChange}
+              />
             </td>
           </tr>
         </tbody>

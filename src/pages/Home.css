@@ -83,6 +83,8 @@
   font-size: 4em;
   width: max-content;
   transition: font-size 250ms ease-in-out;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 @keyframes type-translate {
@@ -110,7 +112,7 @@
   .home-text-grouping {
     left: 15vw;
   }
-  .type-animation {
+  /* .type-animation {
     font-size: 5vh;
-  }
+  } */
 }
