@@ -1,14 +1,10 @@
+import "./Contact.css"
 import { FaInstagram } from "react-icons/fa6";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 export function Contact() {
   return (
-    <div style={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      height: "calc(100vh - var(--footer-height))" }}>
+    <div id="contact-page" className="short-page">
       <h1>Contact page</h1>
       <p style={{
         marginTop: "2vh",

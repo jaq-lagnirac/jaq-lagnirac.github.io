@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import './App.css'
 import { Home } from './pages/Home'
 import { Contact } from './pages/Contact'
+import { Projects } from './pages/Projects'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route element={<Layout/>}>
             <Route path="/" element={<Home/>}/>
+            <Route path="/projects" element={<Projects/>}/>
             <Route path="/contact" element={<Contact/>}/>
           </Route>
         </Routes>

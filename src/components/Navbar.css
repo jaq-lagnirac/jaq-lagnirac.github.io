@@ -30,6 +30,9 @@
 }
   
 .nav-tabs {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: end;
   font-size: 1.75em;
 }
 

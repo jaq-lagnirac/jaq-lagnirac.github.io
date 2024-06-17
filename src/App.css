@@ -6,7 +6,6 @@
   justify-content: center;
   background-color: var(--background-color);
   color: var(--primary-text-color);
-  transition: background-color 250ms ease-in-out;
   z-index: -99999999;
 }
 

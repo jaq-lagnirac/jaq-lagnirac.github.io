@@ -57,6 +57,9 @@ export function Navbar() {
             <Link to="/"><p>Home</p></Link>
           </HoverButton>
           <HoverButton className={className}>
+            <Link to="/projects"><p>Projects</p></Link>
+          </HoverButton>
+          <HoverButton className={className}>
             <Link to="/contact"><p>Contact</p></Link>
           </HoverButton>
         </FadeIn>
@@ -84,8 +87,6 @@ export function Navbar() {
                     size="2em"
                   />
                 </div>
-                {/* <img src={HamburgerIcon} alt="Menu"/> */}
-                {/* <object data={HamburgerIcon}></object> */}
               </HoverButton>
               <NavButtonList className="nav-button nav-tabs" show={showNav}/>
             </td>
