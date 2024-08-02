@@ -1,0 +1,36 @@
+* {
+  --article-center-half-width: calc(5vw / 2);
+  --left-width: 25vw;
+}
+
+#article-parent {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /* background-color: violet; */
+}
+
+#article-child-left {
+  width: var(--left-width);
+  background-color: purple;
+  margin-right: var(--article-center-half-width);
+}
+
+#article-img {
+  width: var(--left-width);
+}
+
+#article-child-right {
+  width: 50vw;
+  background-color: purple;
+  margin-left: var(--article-center-half-width);
+
+  /* https://stackoverflow.com/a/1638824 */
+  white-space: pre-wrap;      /* CSS3 */   
+  white-space: -moz-pre-wrap; /* Firefox */    
+  white-space: -pre-wrap;     /* Opera <7 */   
+  white-space: -o-pre-wrap;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
+}
