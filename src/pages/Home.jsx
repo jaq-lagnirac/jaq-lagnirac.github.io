@@ -5,8 +5,13 @@ import './Home.css'
 import TKDJustin from "../assets/TKD_Justin.jpg"
 import JustinWorking from "../assets/Justin_working.jpg"
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
 export function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   
   const typeSequence =[
     'Justin Caringal',
