@@ -4,7 +4,7 @@ import "./Projects.css"
 import { GrProjects } from "react-icons/gr";
 import { useEffect } from "react";
 
-import JustinWorking from "../assets/Justin_working.jpg"
+import mediroLogo from "../assets/logo-color.svg"
 
 export function Projects() {
 
@@ -20,7 +20,7 @@ export function Projects() {
           title="Projects"
         />
       <div style={{ height: "50vh" }}/>
-      <Article title={"title"} img={ JustinWorking }>
+      <Article title="Mediro - Media Directory Organizer" img={ mediroLogo }>
         This is a test of what exactly I can write.
       </Article>
       {/* <hr/> */}
