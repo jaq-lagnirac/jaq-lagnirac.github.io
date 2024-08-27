@@ -2,6 +2,10 @@
   --left-width: 25vw;
 }
 
+hr {
+  margin: 5%;
+}
+
 #article-parent {
   font-size: 1.2em;
   margin-left: 5vw;
