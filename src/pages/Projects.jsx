@@ -6,6 +6,7 @@ import { useEffect } from "react";
 
 import mediroLogo from "../assets/logo-color.svg"
 import pptLogo from "../assets/Microsoft_PowerPoint_Logo.png"
+import WYLDPirateRadio from "../assets/WYLDPirateRadio.png"
 
 export function Projects() {
 
@@ -48,6 +49,33 @@ export function Projects() {
         <br/>
         For more, click here for the&nbsp;
         <a href="https://github.com/jaq-lagnirac/mediro">Github page</a>.
+      </Article>
+      <Article title="YtS - YouTube-to-Spotify Converter" img={ WYLDPirateRadio }>
+        Before I began using Spotify as my primary platform for consuming music and
+        podcasts, I created and listened to music through standard YouTube playlists.
+        However, once I transferred over to Spotify, I was left stranded without my
+        playlists that I had curated over the course of years, some of which had close
+        to 2,000 individual songs. Therefore, I wished to develop a tool to automate
+        this process.
+        <br/>
+        <br/>
+        In order to accomplish this, I needed to access the APIs (application
+        programming interfaces) of both YouTube and Spotify. The YouTube API was the
+        easier of the two to access, as by making the playlist public (the default
+        for my playlists), the&nbsp;
+        <a href="https://pytube.io/en/latest/">pytube</a> library can access and crawl
+        through the playlist to extract the video title and author. This can then either
+        be saved to a JSON file or directly inputted as a dictionary to the second part
+        of the program which accesses the Spotify API using the&nbsp;
+        <a href="https://spotipy.readthedocs.io/en/2.24.0/">spotipy</a> library. A Spotify
+        Developer API key was obtained through&nbsp;
+        <a href="https://developer.spotify.com/">Spotify for Developers</a>, the official 
+        Web API for Spotify, in order to allow the bot access to custom playlist creation.
+        <br/>
+        <br/>
+        <br/>
+        For more, click here for the&nbsp;
+        <a href="https://github.com/jaq-lagnirac/youtube-spotify-converter">Github page</a>.
       </Article>
       <Article title="Slides Generator" img={ pptLogo }>
         In mid-June, I received a text from Evelyn Schmidt, a friend who worked
